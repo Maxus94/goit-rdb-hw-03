@@ -1,0 +1,15 @@
+1.1. SELECT * 
+FROM hw3.products;
+1.2. SELECT name, phone 
+FROM hw3.shippers;
+2. SELECT AVG(price) as average_price, MIN(price) as min_price, MAX(price) as max_price FROM hw3.products;
+3. SELECT DISTINCT category_id, price
+ FROM hw3.products 
+ORDER BY price DESC 
+LIMIT 10;
+4. SELECT COUNT(*) 
+FROM hw3.products
+ WHERE price >=20 AND price <= 100;
+5. SELECT supplier_id, COUNT(name) AS products_count, AVG(price) AS avg_price
+ FROM hw3.products
+ GROUP BY supplier_id;
